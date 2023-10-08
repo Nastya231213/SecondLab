@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.LoginRegistrationController">
+   <children>
+      <AnchorPane fx:id="loginForm" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutY="4.0" prefHeight="423.0" prefWidth="348.0" styleClass="white-form" stylesheets="@../style/style.css">
+               <children>
+                  <TextField fx:id="usernameTextfield" layoutX="57.0" layoutY="204.0" prefHeight="32.0" prefWidth="254.0" promptText="Username" styleClass="textfield" />
+                  <TextField fx:id="passwordTextfield" layoutX="57.0" layoutY="256.0" prefHeight="32.0" prefWidth="254.0" promptText="Password" styleClass="textfield" />
+                  <Text layoutX="48.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Account">
+                     <font>
+                        <Font name="Arial Bold" size="39.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9490196108818054" green="0.40392157435417175" blue="0.04313725605607033" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.18431372940540314" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+                  <Button fx:id="btnLogin" layoutX="95.0" layoutY="333.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="161.0" styleClass="lobin-btn" stylesheets="@../style/style.css" text="Login" />
+                  <ImageView fitHeight="92.0" fitWidth="97.0" layoutX="129.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons8-user-90.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="linkForgotpassword" layoutX="48.0" layoutY="297.0" prefHeight="23.0" prefWidth="105.0" text="Forgot Password?" textFill="#f86300" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="348.0" prefHeight="431.0" prefWidth="309.0" styleClass="gradient" stylesheets="@../style/style.css">
+               <children>
+                  <ImageView fitHeight="92.0" fitWidth="97.0" layoutX="109.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons8-bread-and-rye-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="35.0" layoutY="212.0" prefHeight="36.0" prefWidth="260.0" text="Food Store Management System" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="17.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="281.38" elevation="78.1" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Label>
+                  <Label layoutX="85.0" layoutY="296.0" prefHeight="36.0" prefWidth="141.0" text="Create Account" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="createAccountBtnLink" layoutX="79.0" layoutY="358.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="25.0" prefWidth="151.0" styleClass="create-btn" stylesheets="@../style/style.css" text="Create new Account" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="registerForm" layoutX="8.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <AnchorPane layoutX="306.0" layoutY="4.0" prefHeight="423.0" prefWidth="348.0" styleClass="white-form" stylesheets="@../style/style.css">
+               <children>
+                  <TextField fx:id="usernameTextfieldRegisterForm" layoutX="48.0" layoutY="95.0" prefHeight="32.0" prefWidth="254.0" promptText="Username" styleClass="textfield" />
+                  <Text layoutX="11.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Account">
+                     <font>
+                        <Font name="Arial Bold" size="39.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9490196108818054" green="0.40392157435417175" blue="0.04313725605607033" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.18431372940540314" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+                  <Button fx:id="btnRegister" layoutX="95.0" layoutY="373.0" mnemonicParsing="false" onAction="#registrationBtn" prefHeight="36.0" prefWidth="161.0" styleClass="lobin-btn" stylesheets="@../style/style.css" text="Sign up" />
+                  <ComboBox fx:id="selectorQuesiton" layoutX="47.0" layoutY="278.0" prefHeight="32.0" prefWidth="254.0" promptText="Question" styleClass="textfield" stylesheets="@../style/style.css" />
+                  <TextField fx:id="answerTextfield" layoutX="47.0" layoutY="322.0" prefHeight="32.0" prefWidth="254.0" promptText="Answer" styleClass="textfield" />
+                  <PasswordField fx:id="passwordTextfieldRegisterform" layoutX="49.0" layoutY="188.0" prefHeight="32.0" prefWidth="254.0" promptText="Password" styleClass="textfield" stylesheets="@../style/style.css" />
+                  <PasswordField fx:id="confirmPasswordTextfield" layoutX="48.0" layoutY="233.0" prefHeight="32.0" prefWidth="254.0" promptText="Confirm password" styleClass="textfield" stylesheets="@../style/style.css" />
+                  <TextField fx:id="emailTextfiled" layoutX="49.0" layoutY="140.0" prefHeight="32.0" prefWidth="254.0" promptText="Email" styleClass="textfield" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="431.0" prefWidth="309.0" styleClass="gradient" stylesheets="@../style/style.css">
+               <children>
+                  <ImageView fitHeight="92.0" fitWidth="97.0" layoutX="109.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons8-bread-and-rye-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="35.0" layoutY="212.0" prefHeight="36.0" prefWidth="260.0" text="Food Store Management System" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="17.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="281.38" elevation="78.1" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Label>
+                  <Label layoutX="118.0" layoutY="289.0" prefHeight="36.0" prefWidth="73.0" text="Sign up" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnLoginAccountLink" layoutX="79.0" layoutY="358.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="25.0" prefWidth="151.0" styleClass="create-btn" stylesheets="@../style/style.css" text="Login account" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

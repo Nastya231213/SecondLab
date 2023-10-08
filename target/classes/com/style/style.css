@@ -1,0 +1,46 @@
+.gradient{
+	-fx-background-color:linear-gradient(to bottom right,#fcad2d,#e44b25)
+}
+
+
+.white-form{
+	-fx-background-color:#fff;
+}
+
+.lobin-btn{
+	-fx-background-color:linear-gradient(to bottom right,#f2670b,#f54d1b);
+	-fx-background-radius:5px;
+	-fx-cursor:hand;-fx-text-fill:#fff;
+	-fx-font-size:14px;
+}
+
+.login-btn:hover{
+-fx-background-color: linear-gradient(to bottom right, #ffb27a, #ff9c6a);
+
+}
+
+
+.textfield{
+	-fx-background-color:transparent;
+	-fx-border-color:linear-gradient(to bottom right,#f2670b,#f54d1b);
+	-fx-border-width:0.7px;
+}
+
+.textfield:focused{
+	-fx-border-width:1px;
+}
+
+.create-btn{
+	-fx-background-color:transparent;
+	-fx-cursor:hand;
+	-fx-border-width:1px;
+	-fx-border-color:#fff;
+-fx-text-align: center;
+}
+
+.create-btn:focused{
+	-fx-background-color:#fff;
+		-fx-border-color:transparent;
+	
+}
+
